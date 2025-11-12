@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة المنتجات - متجر وفاك</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">متجر وفاك</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="products.html" class="active">المنتجات</a></li>
+                <li><a href="payment.html">سياسة الدفع</a></li>
+                <li><a href="shein.html">خدمة شي إن</a></li>
+            </ul>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="products-page">
+        <aside class="sidebar">
+            <h2>الأقسام</h2>
+            <ul id="category-list">
+                <li data-category="all" class="active">الكل</li>
+                <li data-category="gaming">ألعاب قيمنق</li>
+                <li data-category="perfumes">عطور</li>
+                <li data-category="electronics">أجهزة إلكترونية</li>
+                <li data-category="personal_care">منتجات عناية شخصية</li>
+            </ul>
+        </aside>
+
+        <section class="product-grid" id="product-grid">
+            <!-- سيتم إضافة بطاقات المنتجات هنا بواسطة JavaScript -->
+        </section>
+    </main>
+
+    <!-- مودال السلة -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>سلة التسوق</h2>
+            <div id="cart-items">
+                <!-- عناصر السلة تضاف هنا -->
+            </div>
+            <div class="cart-summary">
+                <p>الإجمالي: <span id="cart-total">0</span> ريال</p>
+            </div>
+            <button id="checkout-btn" class="btn-primary">تأكيد الطلب عبر واتساب</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 متجر وفاك. جميع الحقوق محفوظة.</p>
+        <p>لخدمة العملاء: 700647749 | 780514991</p>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الدفع - متجر وفاك</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">متجر وفاك</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="products.html">المنتجات</a></li>
+                <li><a href="payment.html" class="active">سياسة الدفع</a></li>
+                <li><a href="shein.html">خدمة شي إن</a></li>
+            </ul>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="policy-content">
+        <h1>سياسة الدفع في متجر وفاك</h1>
+        <p>نحن في متجر وفاك نسعى لتوفير أسهل وأكثر طرق الدفع أمانًا لعملائنا. حاليًا، نعتمد طريقة الدفع عبر التحويل المصرفي المباشر.</p>
+
+        <section class="payment-details">
+            <h2>تفاصيل الحساب المصرفي</h2>
+            <div class="account-info">
+                <p><strong>اسم البنك:</strong> صرافة العمقي</p>
+                <p><strong>رقم الحساب:</strong> 254250773</p>
+                <p><strong>اسم صاحب الحساب:</strong> أمجد ناصر أحمد بن مدشل</p>
+            </div>
+            <p class="note">يرجى التأكد من إرسال صورة إيصال التحويل عبر الواتساب إلى خدمة العملاء لتأكيد طلبك.</p>
+        </section>
+
+        <section class="contact-info">
+            <h2>للتواصل وخدمة العملاء</h2>
+            <p>لأي استفسارات بخصوص الدفع أو لتأكيد التحويل، يرجى التواصل معنا عبر الأرقام التالية:</p>
+            <ul>
+                <li><i class="fab fa-whatsapp"></i> الرقم الأساسي (واتساب): <a href="https://wa.me/967700647749" target="_blank">700647749</a></li>
+                <li><i class="fas fa-phone"></i> رقم إضافي: 780514991</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- مودال السلة -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>سلة التسوق</h2>
+            <div id="cart-items">
+                <!-- عناصر السلة تضاف هنا -->
+            </div>
+            <div class="cart-summary">
+                <p>الإجمالي: <span id="cart-total">0</span> ريال</p>
+            </div>
+            <button id="checkout-btn" class="btn-primary">تأكيد الطلب عبر واتساب</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 متجر وفاك. جميع الحقوق محفوظة.</p>
+        <p>لخدمة العملاء: 700647749 | 780514991</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية - متجر وفاك</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">متجر وفاك</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">الرئيسية</a></li>
+                <li><a href="products.html">المنتجات</a></li>
+                <li><a href="payment.html">سياسة الدفع</a></li>
+                <li><a href="shein.html">خدمة شي إن</a></li>
+            </ul>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="home-content">
+        <section class="hero-section">
+            <h2>تجربة تسوق فريدة من نوعها</h2>
+            <p>اكتشف مجموعتنا الواسعة من ألعاب القيمنق، العطور الفاخرة، الأجهزة الإلكترونية، ومنتجات العناية الشخصية.</p>
+            <a href="products.html" class="btn-primary">تسوق الآن</a>
+        </section>
+
+        <section class="offers-section">
+            <h3>عروض خاصة!</h3>
+            <div class="offer-card">
+                <i class="fas fa-gift"></i>
+                <h4>هدية الطلبات الأولى</h4>
+                <p>أول 10 طلبيات سيحصلون على هدية قيمة ومميزة مع طلبهم. لا تفوت الفرصة!</p>
+            </div>
+            <div class="offer-card">
+                <i class="fas fa-percent"></i>
+                <h4>تخفيضات نهاية الأسبوع</h4>
+                <p>خصومات تصل إلى 50% على مجموعة مختارة من الأجهزة الإلكترونية.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- مودال السلة -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>سلة التسوق</h2>
+            <div id="cart-items">
+                <!-- عناصر السلة تضاف هنا -->
+            </div>
+            <div class="cart-summary">
+                <p>الإجمالي: <span id="cart-total">0</span> ريال</p>
+            </div>
+            <button id="checkout-btn" class="btn-primary">تأكيد الطلب عبر واتساب</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 متجر وفاك. جميع الحقوق محفوظة.</p>
+        <p>لخدمة العملاء: 700647749 | 780514991</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
